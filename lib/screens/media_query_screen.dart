@@ -12,7 +12,7 @@ class MediaQueryScreen extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Media Query Screen',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
         useMaterial3: true,
       ),
       home: Scaffold(

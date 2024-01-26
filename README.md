@@ -22,10 +22,7 @@ fvm version : 3.13.7
 ### test_widgetbook : Widgetbook 테스트 브랜치 
 - 위젯북이란 ? 플러터에서 사용하는 일종의 스토리북
 - [관련 문서](https://docs.widgetbook.io/)
+- widgetbook.dart를 실행
 - 위젯북 자동 생성
   - ```flutter pub run build_runner build```
   - ```flutter pub run build_runner watch```
-
-## 브랜치별 실행
-- main : main.dart를 실행
-- test_widgetbook : widgetbook.dart를 실행

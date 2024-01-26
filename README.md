@@ -24,8 +24,8 @@ fvm version : 3.13.7
   - [관련 문서](https://docs.widgetbook.io/)
   - 실행시 : widgetbook.dart를 실행
   - 위젯북 자동 생성
-    ```flutter pub run build_runner build```
-    ```flutter pub run build_runner watch```
+    - ```flutter pub run build_runner build```
+    - ```flutter pub run build_runner watch```
 
 ## 브랜치별 실행
 - main : main.dart를 실행

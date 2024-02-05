@@ -26,3 +26,8 @@ fvm version : 3.13.7
 - 위젯북 자동 생성
   - `flutter pub run build_runner build`
   - `flutter pub run build_runner watch`
+
+### test_bloc : Bloc 패턴 연습
+- lib/bloc 폴더 내부
+  - test.dart : BlocObserver, BlocListener Test
+  - test_repository.dart : Consumer, Repository Test

@@ -31,3 +31,4 @@ fvm version : 3.13.7
 - lib/bloc 폴더 내부
   - test.dart : BlocObserver, BlocListener Test
   - test_repository.dart : Consumer, Repository Test
+  - test_cubit.dart : Cubit Test

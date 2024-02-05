@@ -37,6 +37,7 @@ class MyWidget extends StatelessWidget {
     final BlocCounter counterBloc = BlocProvider.of<BlocCounter>(context);
     final UserBloc userBloc = BlocProvider.of<UserBloc>(context);
     return MultiBlocListener(listeners: [
+      // Counter
       BlocListener<BlocCounter, int>(
         listenWhen: (previous, current) {
           return true;
@@ -50,6 +51,7 @@ class MyWidget extends StatelessWidget {
           );
         },
       ),
+      // User
       BlocListener<UserBloc, User?>(listener: (context, user) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -64,6 +66,7 @@ class MyWidget extends StatelessWidget {
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  // Counter
                   BlocBuilder<BlocCounter, int>(
                       buildWhen: (previous, current) {
                         return true;
@@ -96,6 +99,7 @@ class MyWidget extends StatelessWidget {
                         );
                       }
                   ),
+                  // User
                   BlocBuilder<UserBloc, User?>(builder: (context, user) {
                     return Column(
                       mainAxisAlignment: MainAxisAlignment.center,
